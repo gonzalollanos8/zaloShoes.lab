@@ -239,7 +239,7 @@ main{
     top: 1750px;
     background-color: var(--background-secondary);
     height: 300px;
-    width: 1400px;
+    width: 150%;
     z-index: 2;
     transform: rotate(-2.5deg);
     -webkit-transform: rotate(-2.5deg);
