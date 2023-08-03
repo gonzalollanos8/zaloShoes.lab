@@ -5,6 +5,8 @@
     --back-cards: rgba(24, 24, 27, 1);
     --letters: rgba(255, 255, 255, 1);
     --letters-secondary: rgba(140, 140, 148, 1);
+    --btn: #006CD0;
+    --background-secondary: #FF3333;
 }
 
 *{
@@ -19,21 +21,30 @@
 }
 body{
     background-color: var(--background);
+    overflow-x: hidden;
 }
 
 /* -----------------HEADER/NAVBAR------------------ */
 header{
-        background: rgba(38, 38, 38, 0.30);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: aliceblue;
-        padding: 10px 25px;
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        z-index: 2;
+    background: rgba( 30, 30, 30, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 30, 30, 30, 0.65 );
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 0 0 15px 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    padding: 10px 25px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
 }
 
 header ul{
@@ -45,6 +56,21 @@ header ul{
 .options_nav a{
     color: white;
 }
+.options_nav a:hover{
+    color: var(--background-secondary);
+    font-weight: 800;
+    font-size: 20px;
+    transition-duration: 500ms;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+.icons img{
+    height: 35px;
+}
 
 /* -----------------HERO------------------ */
 
@@ -55,11 +81,12 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
     background-image: url(../img/dunk\ fondo\ hero\ 1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
+    
 }
 
 #Home{
@@ -109,14 +136,27 @@ main{
     object-fit:contain;
 }
 
+
 #About{
     max-width: 1200px;
+    display: flex;
+    margin-bottom: 900px;
+    z-index: 0;
+    overflow: hidden;
+}
+.about-text{
+    z-index: 3;
     display: flex;
     align-content: flex-start;
     gap: 30px;
     color: var(--letters);
-    padding: 0px 10px;
-    margin-bottom: 100px;
+    padding: 20px 15px;
+    background-color: rgba(30, 30, 30, 0.539);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 #About span{
@@ -125,27 +165,94 @@ main{
     font-style: italic;
 }
 
+.about-cta{
+    position: absolute;
+    top: 1850px;
+    left: 550px;
+    z-index: 4;
+    font-weight: 800;
+    font-size: 48px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: italic;
+    color: var(--letters);
+}
+
+.imgback-jordan{
+    position: absolute;
+    right: 0px;
+    top: 1105px;
+    z-index: 1;
+}
+.imgback-messi{
+    position: absolute;
+    height: 550px;
+    top: 1300px;
+    left:400px;
+    z-index: 2;
+}
+.imgback-hawk{
+    position: absolute;
+    top: 1250px;
+    left: 0px;
+    z-index: 1;
+}
+.imgback-lebron{
+    position: absolute;
+    top: 1250px;
+    left: 700px;
+    height: 750px;
+    z-index: 3;
+}
+/* -----------------SEPARETE SECTION------------------ */
+
+.separate-section{
+    position: absolute;
+    left: -10px;
+    top: 1134px;
+    background-color: var(--background-secondary);
+    height: 300px;
+    width: 1400px;
+    z-index: 0;
+    transform: rotate(-2.5deg);
+    -webkit-transform: rotate(-2.5deg);
+    -moz-transform: rotate(-2.5deg);
+    -ms-transform: rotate(-2.5deg);
+    -o-transform: rotate(-2.5deg);
+}
+
+.separate-section-2{
+    position: absolute;
+    left: -10px;
+    top: 1750px;
+    background-color: var(--background-secondary);
+    height: 300px;
+    width: 1400px;
+    z-index: 2;
+    transform: rotate(-2.5deg);
+    -webkit-transform: rotate(-2.5deg);
+    -moz-transform: rotate(-2.5deg);
+    -ms-transform: rotate(-2.5deg);
+    -o-transform: rotate(-2.5deg);
+}
 
 /* -----------------CARDS PRODUCTS------------------ */
 
 #Products{
-    background-color: red;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .Products-title{
     max-width: 100%;
     color: var(--letters);
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-content: center;
-    gap: 200px;
-    margin:0 10px 50px 10px;
-
+    padding: 10px;
+    margin-bottom: 40px;
 }
 
 .filters{
@@ -155,24 +262,26 @@ main{
     gap: 50px;
 }
 
-.filters-buttom{
+.filters-btn{
     display: flex;
     align-items: center;
     align-content: center;
     gap: 5px;
-
+    cursor: pointer;
 }
 
-.filters-buttom span{
+.filters-btn span{
     font-weight: 700;
 }
 
 
 .Products-card{
-    max-width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-around;
-    gap: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .Products-card-item{
@@ -211,12 +320,13 @@ main{
     text-align: end;
 }
 .Products-card-item .thr button{
-    /*display: flex;
-    */margin-bottom: 5;
-    /*align-items: flex-end;
-    */gap: 10px;
+    /*display: flex;*/
+    cursor: pointer;
+    margin-bottom: 5;
+    /*align-items: flex-end;*/
+    gap: 10px;
     border-radius: 10px;
-    background: #006CD0;
+    background: var(--btn);
     color: var(--letters);
     font-weight: 800;
     height: 35px;
@@ -229,7 +339,132 @@ main{
 
 
 .Products-card-item img{
-    /* width: 250px; */
-    object-fit: contain;
+    /*width: 250px;
+    */object-fit: contain;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
 
+
+/* -----------------CONTACT AND FIND US------------------ */
+#Contact{
+    background-color: var(--background-secondary);
+    color: var(--letters);
+    /* height: 400px; */
+    width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 30px 30px;
+}
+
+
+#Contact h2{
+        font-size: 30px;
+        font-weight: 800;
+        z-index: 2;
+}
+
+.contact-direct{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 50%;
+    gap: 15px;
+    z-index: 2;
+}
+
+.contact-direct-email{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 5px;
+    padding: 0 5px;
+}
+.contact-direct-phone{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 5px;
+    padding: 0 5px;
+}
+
+.newletter{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 ;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5px;
+}
+.input {
+    min-height: 50px;
+    max-width: 200px;
+    padding: 0 1rem;
+    margin: 15px 0;    
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid var(--btn);
+    border-radius: 6px 0 0 6px;
+    background-color: #fff;
+}
+.button--submit {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: var(--btn);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+.button--submit:hover {
+    background-color: #5e5dcd;
+}
+.input:focus, .input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+}
+
+.contact-findus{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 20px;
+    max-width: 50%;
+    z-index: 2;
+}
+.maps{
+    height: 250px;
+    width: 500px;
+    border: 1.5px solid #FFF;
+    padding: 1.5px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px ;
+    -moz-border-radius: 15px ;
+    -ms-border-radius: 15px ;
+    -o-border-radius: 15px ;
+}
+
+footer{
+	max-width: 1200px;
+	color: var(--letters);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
 }
