@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./img/icons/logofavicon.svg">
+    <link rel="stylesheet" href="./styles/mediaquerys.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Zaloshoes</title>
 </head>
 <body>
     <header>
-        <img src="./img/logo zalo.png" alt="logo">
+        <img class="logo-nav" src="./img/logo zalo.png" alt="logo">
             
             <nav>
                 <ul class="options_nav">
@@ -19,6 +21,31 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
+
+            <nav class="navbar-burger">
+                <label for="toggle-menu"><img src="./img/icons/menuResponsive.svg" alt="menu"></label>
+                <input type="checkbox" id="toggle-menu"/>
+    
+                <ul class="options_nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li>
+                        <div class="icon-mobile-favorite">
+                            <img src="./img/icons/heart.svg" alt="favorite">
+                            <a href="#">FAVORITE</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-mobile-user">
+                            <img src="./img/icons/user.svg" alt="user">
+                            <a href="#">LOG IN</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+    
 
         <div class="icons">        
             <div class="icon-user">
@@ -33,6 +60,10 @@
                 <a href="#"><img src="./img/buy cart.png" alt="cart"></a>
             </div>
         </div>
+<!-- CART RESPONSIVE -->
+            <div class="icon-mobile-cart">
+                <a href="#"><img src="./img/buy cart.png" alt="cart"></a>
+            </div>
 
     </header>
 <!-- HERO -->

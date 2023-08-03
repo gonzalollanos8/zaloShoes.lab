@@ -1,5 +1,269 @@
-@media(max-width:414px){
-    
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,700;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,700&display=swap');
 
+:root{
+    --background: rgba(30, 30, 30, 1);
+    --back-cards: rgba(24, 24, 27, 1);
+    --letters: rgba(255, 255, 255, 1);
+    --letters-secondary: rgba(140, 140, 148, 1);
+    --btn: #006CD0;
+    --background-secondary: #FF3333;
+}
+
+@media(max-width:768px){
+
+    header{
+        box-shadow: none;
+        border: none;
+        background-color: var(--back-cards);
+        backdrop-filter: none;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+
+    nav{
+        display: none;
+    }
+    #toggle-menu{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+
+
+    .navbar-burger{
+        order: 1;
+        display: flex;
+    }
+
+    .icons-mobile{
+        display: none;
+    }
+
+    .navbar-burger ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 25px;
+        gap: 40px;
+        width: 100%;
+        height: calc(100vh - 80px);
+        z-index: 2;
+        position: absolute;
+        top: 88px;
+        left: 0;
+        display: none;
+        background-color: var(--back-cards);
+    }
+    
+    .icon-mobile-favorite{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        gap:5px
+    }
+    .icon-mobile-favorite img{
+        height: 20px;
+    }
+    .icon-mobile-user{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        gap:5px
+    }
+    .icon-mobile-user img{
+        height: 20px;
+    }
+
+    .navbar i{
+        display: flex;
+    }
+
+    #toggle-menu:checked ~ ul{
+        display: flex;
+    }
+
+    .logo-nav{
+        order: 2;
+    }
+    .icon-mobile-user{
+        display: flex;   }
+    .icon-mobile-cart{
+        order: 3;
+        display: flex;
+    }
+
+
+/* --------------HERO-------------- */
+main{
+    background-size: auto;
+}
+
+#Home img{
+    height: 250px;
+}
+
+#Info-cards{
+    gap: 0;
+    margin-bottom: 50px;
+}
+#Info-cards .card{
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    width: 265px;
+}
+
+/* ------------ ABOUT------------ */
+.about-text{
+    align-items: center;
+    padding: 0px 15px;
+    gap: 15px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+.separate-section{
+    display: none;
+}
+
+.imgback-messi{
+    top: 1100px;
+    left: 100px;
+}
+.imgback-jordan{
+    top: 900px;
+}
+.imgback-hawk{
+    top: 1000px;
+    left: -250px;
+}
+.imgback-lebron{
+    /* display: none; */
+    left: 450px;
+    top: 1150px;
+}
+
+.about-cta{
+    top: 1650px;
+    left: 260px;
+}
+.separate-section-2{
+    top: 1550px;
+}
+
+/*-------CONTACT--------*/
+
+#Contact{
+    flex-direction: column;
+}
+}
+
+@media(max-width: 390px){
+    header{
+        padding: 2px 10px;
+    }
+    header img{
+        height: 35px;
+        margin: 5px;
+    }
+    
+    #Home img{
+        height: 150px;
+    }
+/* -------------ABOUT Y CARD INFO----------------- */
+    #Info-cards{
+        position: absolute;
+        top: 690px;
+        left: 0;
+        gap: 0px;
+        justify-content: center;
+        margin-bottom: 0px;
+        background-color: var(--back-cards);
+    }
+    #Info-cards img{
+        width: 100px;
+    }
+    #Info-cards .card{
+        /* background-color: transparent; */
+        margin: 0px;
+        height: 100px;
+        width: 130px;
+        z-index: 1;
+    }
+    #Info-cards .card p{
+        display: none;
+    }
+
+    .about-text{
+        flex-direction: column;
+        z-index: 1;
+        padding: 10px;
+        background-color: transparent;
+    }
+
+    .separate-section{
+        height: 550px;
+        display: flex;
+        top: 400px;
+        z-index: 0;
+        transform: rotate(-1.5deg);
+        -webkit-transform: rotate(-1.5deg);
+        -moz-transform: rotate(-1.5deg);
+        -ms-transform: rotate(-1.5deg);
+        -o-transform: rotate(-1.5deg);
+}
+    .imgback-jordan{
+        top: 830px;
+        left: 5px;
+    }
+    .imgback-messi{
+        top: 1030px;
+        left: -150px;
+    }
+    .imgback-hawk{
+        left:0.5px;
+    }
+    .imgback-lebron{
+        display: none;
+    }
+
+    .separate-section-2{
+        top: 1520px;
+    }
+    .about-cta{
+        left:50px;
+    }
+    #About{
+        margin-bottom: 1250px;
+    }
+
+/* -------------CONTACT----------------- */
+    #Contact{
+        padding: 15px;
+        justify-content: center;
+        max-width: 390px;
+        gap: 30px;
+    }
+    .contact-direct{
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .maps{
+        width: 42.5vh;
+        align-items: center;
+        justify-content: center;
+    }
 
 }

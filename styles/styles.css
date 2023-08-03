@@ -35,7 +35,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: aliceblue;
+    color: var(--letters);
     padding: 10px 25px;
     position: fixed;
     top: 0px;
@@ -70,6 +70,19 @@ header ul{
 
 .icons img{
     height: 35px;
+}
+
+.icons-mobile{
+    display: none;
+}
+
+.navbar-burger{
+    display: none;
+}
+
+
+.icon-mobile-cart{
+    display: none;
 }
 
 /* -----------------HERO------------------ */
