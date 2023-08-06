@@ -5,121 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./img/icons/logofavicon.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/mediaquerys.css">
     <title>Zaloshoes</title>
 </head>
 <body>
-    <header>
-        <img class="logo-nav" src="./img/logo zalo.png" alt="logo">
-            
-            <nav>
-                <ul class="options_nav">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-
-            <nav class="navbar-burger">
-                <label for="toggle-menu"><img src="./img/icons/menuResponsive.svg" alt="menu"></label>
-                <input type="checkbox" id="toggle-menu"/>
-    
-                <ul class="options_nav">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li>
-                        <div class="icon-mobile-favorite">
-                            <img src="./img/icons/heart.svg" alt="favorite">
-                            <a href="#">FAVORITE</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon-mobile-user">
-                            <img src="./img/icons/user.svg" alt="user">
-                            <a href="#">LOG IN</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-    
-
-        <div class="icons">        
-            <div class="icon-user">
-                <a href="#"><img src="./img/icons/user.svg" alt="user"></a>
-            </div>
-
-            <div class="icon-favorite">
-                <a href="#"><img src="./img/icons/heart.svg" alt="favorite"></a>
-            </div>
-
-            <div class="icon-cart">
-                <a href="#"><img src="./img/buy cart.png" alt="cart"></a>
-            </div>
-        </div>
-<!-- CART RESPONSIVE -->
-            <div class="icon-mobile-cart">
-                <a href="#"><img src="./img/buy cart.png" alt="cart"></a>
-            </div>
-
-    </header>
-<!-- HERO -->
-    <main>
-    <div class="background-section">    
-        <section id="Home">
-            <div class="Home-hero-img">
-            <img src="./img/logo name primary.png" alt="Zaloshoes">
-            </div>
-        </section>
-
-<!-- INFO + ABOUT -->
-            <section id="Info-cards">
-                <div class="card">
-                    <img src="./img/zapacard 1.png" alt="card">
-                    <p>Shoes</p>
-                </div>
-                <div class="card">
-                    <img src="./img/accesorycard 1.png" alt="card">
-                    <p>Accesory</p>
-                </div>
-                <div class="card">
-                    <img src="./img/clothescard 1.png" alt="card">
-                    <p>Clothes</p>
-                </div>
-            </section>
+<header>
+    <div class="logo">
+        <img src="./img/logo zalo.png" alt="Zaloshoes">
     </div>
 
-        <section id="About">
+    <nav class="options">
+        <ul class="nav-options">
+            <li class="nav-options option"><a href="#">HOME</a></li>
+            <li class="nav-options option"><a href="#">ABOUT</a></li>
+            <li class="nav-options option"><a href="#">PRODUCTS</a></li>
+            <li class="nav-options option"><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+<!-- RESPONSIVE -->
+    <nav class="menu-burger">
+        
+        <label for="toggle-menu"><img src="./img/icons/menuResponsive.svg" alt="menu"></label>
+        <input type="checkbox" id="toggle-menu"/>
+
+        <ul class="nav-options">
+            <li class="nav-options option"><a href="#">HOME</a></li>
+            <li class="nav-options option"><a href="#">ABOUT</a></li>
+            <li class="nav-options option"><a href="#">PRODUCTS</a></li>
+            <li class="nav-options option"><a href="#">CONTACT</a></li>
+            
+            <div class="action-responsive">
+                <img src="./img/icons/user.svg" alt="user">
+                <a href="#">LOG IN</a>
+            </div>
+            <div class="action-responsive">
+                <img src="./img/icons/heart.svg" alt="favorite">
+                <a href="#">FAVORITE</a>
+            </div>
+        </ul>
+        </nav>
+<!-- RESPONSIVE -->
+
+    <div class="header-action">
+        <div class="action-desktop">
+            <img src="./img/icons/user.svg" alt="user">
+        </div>
+        <div class="action-desktop">
+            <img src="./img/icons/heart.svg" alt="favorite">
+        </div>
+        <div class="action">
+            <img src="./img/icons/buycart.svg" alt="cart">
+        </div>
+    </div>
+
+</header>
+<main>
+    <section id="home">
+        <div class="hero">
+            <img src="./img/logo name primary.png" alt="Zaloshoes">
+        </div>
+    </section>
+    <section id="about">
+            <div class="about-info-cards">    
+                <div class="card">
+                    <img class="card-1" src="./img/zapacard 1.png" alt="shoes">
+                    <p>SHOES</p>
+                </div>
+                <div class="card">
+                    <img class="card-3" src="./img/clothescard 1.png" alt="clothes">
+                    <p>CLOTHES</p>
+                </div>
+                <div class="card">
+                    <img class="card-2" src="./img/accesorycard 1.png" alt="accesory">
+                    <p>ACCESORY</p>
+                </div>
+            </div>
+
             <div class="about-text">
-                <h1>About</h1>
+                <h1>About us</h1>
                 <p>Discover the essence of urban fashion at <span>Zalo shoes.</span> With a unique selection of sneakers and streetwear, we offer you the chance to stand out with every step you take. Our collection blends design and comfort to cater to your fashion desires. Express yourself and showcase your authenticity with <span>Zalo shoes.</span> ! Join us and immerse yourself in urban culture with our exclusive apparel. Shop now and embrace the trend!</p>
             </div>
-
-            <div class="About-imgback">
-                <img class="imgback-jordan" src="./img/background/jordan background.png" alt="jordan">
-                <img class="imgback-messi" src="./img/background/messi background.png" alt="messi">
-                <img class="imgback-hawk" src="./img/background/tony hawk vans background.png" alt="hawk">
-                <img class="imgback-lebron" src="./img/background/back lebron.png" alt="lebron">
-                <!-- <img class="imgback-curry" src="./img/background/curry back.png" alt="curry"> -->
+    </section>
+    <section class="hero-secondary">
+            <div class="img-container">
+            <div class="hero-secondary-img-1">
+                <img src="./img/background/tony hawk vans background.png" alt="tony hawk">
             </div>
-
-            <div class="separate-section">
+            <div class="hero-secondary-img-2">
+                <img src="./img/background/messi background.png" alt="lionel messi">
             </div>
-
-            <div class="separate-section-2">
+            <div class="hero-secondary-img-3">
+                <img src="./img/background/jordan background.png" alt="jordan">
             </div>
-
-            <div class="about-cta">
+            </div>
+            <div class="hero-cta">
                 <h1>READY?</h1>
             </div>
-        </section>
-        
-        
+    </section>
 
-<!-- PRODUCTS -->
     <section id="Products">
 
         <div class="Products-title">
@@ -317,34 +301,68 @@
                                     <button>+ Add cart</button>
                                 </div>
                             </div>
-
         </div>
     </section>
 
-<!-- CONTACTS -->
-    <section id="Contact">
-        <div class="contact-direct">
-            <h2>Contact us</h2>
-            <div class="contact-direct-email">
-            <img src="./img/icons/mail.svg" alt="mail">
-            <span>zaloshoes@shoes.com</span>
-            </div>
-            <div class="contact-direct-phone">
-            <img src="./img/icons/whatsapp.svg" alt="whatsapp">
-            <span>11 5860-3871</span>
-            </div>
-            <div class="newletter">
-                <h2>Newletter</h2>
+    <section id="btn-cta">
 
-                    <div class="input-group">
-                        <input type="email" class="input" id="Email" name="Email" placeholder="zaloshoes@email.com" autocomplete="off">
-                        <input class="button--submit" value="Subscribe" type="submit">
-                    </div>
+        <div class="btn-log">
+            <img src="./img/icons/user.svg" alt="user">
+            <span>Log in</span>
+        </div>
+
+        <div class="btn-up">
+            <img src="./img/icons/arrowup.svg" alt="up">
+            <span class="btn-up">Go up</span>
+        </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="Contact">
+        <div class="contact-section-1">
+            <div class="contact-direct">
+                <h2>Contact us</h2>
+                <div class="contact-direct-email">
+                <img src="./img/icons/mail.svg" alt="mail">
+                <span>zaloshoes@shoes.com</span>
+                </div>
+                <div class="contact-direct-phone">
+                <img src="./img/icons/whatsapp.svg" alt="whatsapp">
+                <span>11 5860-3871</span>
+                </div>
+            </div>
+
+
+            <div class="newletter">
+                    <h2>Newletter</h2>
+
+                        <div class="input-group">
+                            <input type="email" class="input" id="Email" name="Email" placeholder="zaloshoes@email.com" autocomplete="off">
+                            <input class="button--submit" value="Subscribe" type="submit">
+                        </div>
             </div>
         </div>
-        <div class="contact-findus">
-            <h2>Find us</h2>
-            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31197.99741467822!2d-58.513948214813794!3d-34.723196694879206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1689072862666!5m2!1ses-419!2sar"  style="border:8;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-section-2">
+            <div class="contact-socialmedia">
+                <h2>Social Media</h2>
+                
+                <ul class="icons-social">
+                        <li class="icon">
+                            <img src="./img/icons/facebook.svg" alt="facebook">
+                        </li>
+                        <li class="icon">
+                            <img src="./img/icons/instagram.svg" alt="instagram">
+                        </li>
+                        <li class="icon">
+                            <img src="./img/icons/tik_tok.svg" alt="tik tok">
+                        </li>
+                </ul>
+            </div>
+
+            <div class="contact-findus">
+                <h2>Find us</h2>
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31197.99741467822!2d-58.513948214813794!3d-34.723196694879206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1689072862666!5m2!1ses-419!2sar"  style="border:8;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 
@@ -356,6 +374,8 @@
     </footer>
 
 
+
+</main>
 
 
 </body>

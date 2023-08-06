@@ -8,7 +8,7 @@
     --btn: #006CD0;
     --background-secondary: #FF3333;
 }
-
+/* ------------------CONFIG SECTION------------------------- */
 *{
         margin: 0;
         padding: 0;
@@ -18,244 +18,197 @@
         border: none;
         outline: none;
         font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        /* border: red 1px solid; */
 }
 body{
+    background-image: url(../img/dunk\ fondo\ hero\ 1.png);
+    background-repeat: no-repeat;
     background-color: var(--background);
-    overflow-x: hidden;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* -----------------HEADER/NAVBAR------------------ */
+
+
+/* ------------------HEADER + NAVBAR---------------------------------------------- */
 header{
-    background: rgba( 30, 30, 30, 0.65 );
-    box-shadow: 0 8px 32px 0 rgba( 30, 30, 30, 0.65 );
-    backdrop-filter: blur( 14px );
-    -webkit-backdrop-filter: blur( 14px );
-    border-radius: 0 0 15px 15px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--letters);
-    padding: 10px 25px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 2;
-    -webkit-border-radius: 0 0 15px 15px;
-    -moz-border-radius: 0 0 15px 15px;
-    -ms-border-radius: 0 0 15px 15px;
-    -o-border-radius: 0 0 15px 15px;
-}
-
-header ul{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    gap: 15px;
-}
-.options_nav a{
-    color: white;
-}
-.options_nav a:hover{
-    color: var(--background-secondary);
-    font-weight: 800;
-    font-size: 20px;
-    transition-duration: 500ms;
-}
-
-.icons{
-    display: flex;
-    gap: 20px;
-}
-
-.icons img{
-    height: 35px;
-}
-
-.icons-mobile{
-    display: none;
-}
-
-.navbar-burger{
-    display: none;
-}
-
-
-.icon-mobile-cart{
-    display: none;
-}
-
-/* -----------------HERO------------------ */
-
-main{
+    padding: 5px 10px;
     background-color: var(--background);
-    max-width: 100%;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+}
+header img{
+    height: 30px;
+    width: 30px;
+}
+header .logo img{
+    height: 45px;
+    width: 35px;
+}
+
+.menu-burger{
+    display: none;
+}
+
+nav a{
+    color: var(--letters);
+}
+
+nav .nav-options{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0 50px 0;
-    background-image: url(../img/dunk\ fondo\ hero\ 1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
+    gap: 15px;
     
 }
+nav .action-responsive{
+    display: none;
+}
 
-#Home{
+.header-action{
     display: flex;
-    align-items: center;
+    gap: 15px;
+}
+/* -----------------------HERO------------------------------- */
+#home{
+    display: flex;
     justify-content: center;
-    align-content: center;
-    margin-bottom: 100px;
-    /* background-color: red; */
+    align-items: center;
+    padding: 30px;
+    margin: 100px 0;
+
 }
 
-#Home img{
-    margin-top: 75px;
+.hero img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* -------------------CARD INFO------------------------------- */
+#about{
+    width: 100%;
 }
 
-/* -----------------INFO CARDS/ ABOUT------------------ */
-
-#Info-cards{
+.about-info-cards{
     display: flex;
-    gap: 128px;
-    /* position:relative;
-    top:300px; */
-    max-width: 1200px;
-    margin-bottom: 100px;
+    justify-content:space-around;
+    /* align-items:baseline; */
+    margin-bottom: 25px;
+    padding: 25px;
 }
-
 .card{
-    background-color: var(--back-cards);
-    height: 370px;
-    width: 315px;
     display: flex;
     flex-direction: column;
-    padding: 70px 40px;
+    justify-content:flex-end;
     align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-    border-radius: 15px;
-    border: 1.5px solid #FFF;
-    background: #18181B;
+    align-content: space-around;
+    height: 45vh;
+    width: 40vh;
+    background-color: var(--back-cards);
     color: var(--letters-secondary);
-    font-weight: 800;
-}
-
-.card img{
-    height: 160px;
-    width: 230px;
-    object-fit:contain;
-}
-
-
-#About{
-    max-width: 1200px;
-    display: flex;
-    margin-bottom: 900px;
-    z-index: 0;
-    overflow: hidden;
-}
-.about-text{
-    z-index: 3;
-    display: flex;
-    align-content: flex-start;
-    gap: 30px;
-    color: var(--letters);
-    padding: 20px 15px;
-    background-color: rgba(30, 30, 30, 0.539);
+    padding: 30px;
+    border: var(--letters-secondary) 1.5px solid;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
-
-#About span{
+.card p{
     font-weight: 700;
+    font-size: 20px;
     font-family: 'Bai Jamjuree', sans-serif;
-    font-style: italic;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-.about-cta{
-    position: absolute;
-    top: 1850px;
-    left: 550px;
-    z-index: 4;
-    font-weight: 800;
-    font-size: 48px;
-    font-family: 'Bai Jamjuree', sans-serif;
-    font-style: italic;
+.about-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--letters);
-}
-
-.imgback-jordan{
-    position: absolute;
-    right: 0px;
-    top: 1105px;
-    z-index: 1;
-}
-.imgback-messi{
-    position: absolute;
-    height: 550px;
-    top: 1300px;
-    left:400px;
-    z-index: 2;
-}
-.imgback-hawk{
-    position: absolute;
-    top: 1250px;
-    left: 0px;
-    z-index: 1;
-}
-.imgback-lebron{
-    position: absolute;
-    top: 1250px;
-    left: 700px;
-    height: 750px;
-    z-index: 3;
-}
-/* -----------------SEPARETE SECTION------------------ */
-
-.separate-section{
-    position: absolute;
-    left: -10px;
-    top: 1134px;
+    gap: 10px;
+    padding: 20px;
     background-color: var(--background-secondary);
-    height: 300px;
-    width: 150%;
+}
+
+.about-text p{
+    padding: 10px;
+    font-style: normal;
+}
+.about-text span{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* -------------------HERO SECONDARY---------------- */
+
+.hero-secondary{
+    max-width: 1200px;
+    /* background-color: var(--background-secondary); */
+    display: flex;
+    flex-direction: column;
+}
+.img-container{
+    display: flex;
     z-index: 0;
-    transform: rotate(-2.5deg);
-    -webkit-transform: rotate(-2.5deg);
-    -moz-transform: rotate(-2.5deg);
-    -ms-transform: rotate(-2.5deg);
-    -o-transform: rotate(-2.5deg);
 }
-
-.separate-section-2{
-    position: absolute;
-    left: -10px;
-    top: 1750px;
+.hero-secondary-img-1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.hero-secondary-img-2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.hero-secondary-img-3 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.hero-cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 200px;
+    margin-top: -100px;
+    z-index: 1;
     background-color: var(--background-secondary);
-    height: 300px;
-    width: 150%;
-    z-index: 2;
-    transform: rotate(-2.5deg);
-    -webkit-transform: rotate(-2.5deg);
-    -moz-transform: rotate(-2.5deg);
-    -ms-transform: rotate(-2.5deg);
-    -o-transform: rotate(-2.5deg);
+}
+.hero-cta h1{
+    color: var(--letters);
+    font-size: 10rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: italic;
+    font-weight: 700;
 }
 
-/* -----------------CARDS PRODUCTS------------------ */
+/* ---------------------PRODUCTS------------------------- */
 
 #Products{
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin: 100px 5px;
 }
 
 .Products-title{
@@ -361,68 +314,117 @@ main{
     -o-border-radius: 15px 15px 0 0;
 }
 
+/* ---------------------BTN CTA-------------------- */
 
-/* -----------------CONTACT AND FIND US------------------ */
-#Contact{
+#btn-cta{
+    width: 100%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--letters-secondary) 1px solid;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+}
+#btn-cta span{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: italic;
+}
+
+.btn-log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
     background-color: var(--background-secondary);
     color: var(--letters);
-    /* height: 400px; */
+    gap: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.btn-log img{
+    width: 30px;
+}
+
+.btn-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    color: var(--letters);
+}
+
+.btn-up img{
+    width: 30px;
+}
+
+/* ------------CONTACT-------------------- */
+#Contact{
     width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	padding: 30px 30px;
+    display: flex;
+    margin-top: 50px;
+    color: var(--letters);
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+    background-color: var(--back-cards);
+    padding: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
-
-
-#Contact h2{
-        font-size: 30px;
-        font-weight: 800;
-        z-index: 2;
+.contact-section-1{
+    width: 50%;
+    padding: 0px 50px;
 }
-
+.contact-section-2{
+    width: 50%;
+    /* padding: 0px 50px; */
+}
 .contact-direct{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    max-width: 50%;
-    gap: 15px;
-    z-index: 2;
+    align-content: center;
+    margin-bottom: 30px;
+    gap: 20px;
 }
-
 .contact-direct-email{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     align-content: center;
-    gap: 5px;
-    padding: 0 5px;
+    align-items: center;
+    /* margin: 5px 0px; */
+    gap: 10px;
 }
 .contact-direct-phone{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     align-content: center;
-    gap: 5px;
-    padding: 0 5px;
-}
-
-.newletter{
-    display: flex;
-    flex-direction: column;
-    padding: 5px 0 ;
+    align-items: center;
+    /* margin: 5px 0; */
     gap: 10px;
 }
 
-.input-group {
+
+/* ======newletter========= */
+.newletter{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 5px;
+    flex-direction: column;
+    gap: 15px;
 }
 .input {
     min-height: 50px;
-    max-width: 200px;
+    max-width: 150px;
     padding: 0 1rem;
     margin: 15px 0;    
     color: #fff;
@@ -442,6 +444,10 @@ main{
     font-weight: 800;
     cursor: pointer;
     transition: background-color .3s ease-in-out;
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    -ms-border-radius: 0 6px 6px 0;
+    -o-border-radius: 0 6px 6px 0;
 }
 .button--submit:hover {
     background-color: #5e5dcd;
@@ -450,34 +456,58 @@ main{
     border-color: #3898EC;
     outline: none;
 }
+/* ======newletter========= */
+.contact-section-2{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.contact-socialmedia{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icons-social{
+    display: flex;
+    gap: 100px;
+}
+.icon img{
+    width: 150%;
+}
 
 .contact-findus{
     display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	gap: 20px;
-    max-width: 50%;
-    z-index: 2;
-}
-.maps{
-    height: 250px;
-    width: 500px;
-    border: 1.5px solid #FFF;
-    padding: 1.5px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px ;
-    -moz-border-radius: 15px ;
-    -ms-border-radius: 15px ;
-    -o-border-radius: 15px ;
+    flex-direction: column;
+    gap: 15px;
 }
 
+.contact-findus iframe{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+
+/* ----------------FOOTER------------------- */
+
 footer{
-	max-width: 1200px;
-	color: var(--letters);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
+    background-color: var(--back-cards);
+    color: var(--letters);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 25px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
 }
