@@ -330,6 +330,9 @@ nav .action-responsive{
     -o-border-radius: 15px;
 
 }
+#btn-cta a{
+    color: var(--letters);
+}
 #btn-cta span{
     font-family: 'Bai Jamjuree', sans-serif;
     font-style: italic;
