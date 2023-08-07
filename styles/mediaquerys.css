@@ -115,6 +115,26 @@ nav .action-responsive{
 
 
 
+
+
+
+/* -----------------------------LOG IN-------------------------------------- */
+#logo{
+    display: flex;
+    margin-bottom: 20px;
+}
+#logo img{
+    width: 15vw;
+}
+
+#section-login{
+    width: 100%;
+}
+
+#section-img{
+    display: none;
+}
+
 }
 
 @media(max-width: 390px){
@@ -247,6 +267,9 @@ header{
 .contact-findus iframe{
     width: 350px;
 }
+
+
+
 
 
 }
