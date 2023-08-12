@@ -336,9 +336,11 @@ nav .action-responsive{
 #btn-cta span{
     font-family: 'Bai Jamjuree', sans-serif;
     font-style: italic;
+    /* cursor: pointer; */
 }
 
 .btn-log{
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -358,6 +360,7 @@ nav .action-responsive{
 }
 
 .btn-up{
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -430,11 +433,11 @@ nav .action-responsive{
     max-width: 150px;
     padding: 0 1rem;
     margin: 15px 0;    
-    color: #fff;
+    color: var(--letters);
     font-size: 15px;
     border: 1px solid var(--btn);
     border-radius: 6px 0 0 6px;
-    background-color: #fff;
+    background-color: var(--letters);
 }
 .button--submit {
     min-height: 50px;
@@ -442,7 +445,7 @@ nav .action-responsive{
     border: none;
     border-radius: 0 6px 6px 0;
     background-color: var(--btn);
-    color: #fff;
+    color: var(--letters);
     font-size: 14px;
     font-weight: 800;
     cursor: pointer;
@@ -459,7 +462,7 @@ nav .action-responsive{
     border-color: #3898EC;
     outline: none;
 }
-/* ======newletter========= */
+/* ======SECTION 2 CONTACT========= */
 .contact-section-2{
     display: flex;
     flex-direction: column;
